@@ -1,0 +1,3 @@
+
+
+oderedcms start nwsl --template sass --sitename "NWSL Web Desgin" --domain www.new-web-sites.com

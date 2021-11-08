@@ -1,46 +1,69 @@
-const  HeaderSection = document.querySelector(".hero_header_section");
-const options = {
-  root: null,   // The entire screen is the viewport
-  threshold: "0",  // 0 to 1 value
-  rootMargin: "0px"
+const headerSection = document.getElementById('hero_header_section');
+// headerSection.classList.add('.hero_header_large');
 
-}
-
-
-const observe = new IntersectionObserver(function
-  (entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        hero_header_section.classList.add("hero_header_large");
-        console.log(entry.target);
-      } 
-      
-      
-
-      
+options = {
+  root: null, //  The view point
+  threshold: 1,
+  rootMargin: "10px"
+};
+console.log(options );
+const headershrink = new IntersectionObserver(function(entries, headershrink)
+{
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      headerSection.classList.remove('hero_header_small');
+      headerSection.classList.add('hero_header_large');
+    } else {
+      headerSection.classList.remove('hero_header_large');
+      headerSection.classList.add('hero_header_small');
+    }
     
   });
-}, options);
+}, options)
 
-observer.observe(HeaderSection);
+headershrink.observe(headerSection);
+
+// Slide in phone number using animate.css library    animate__backInLeft
+
+
+const contactDetailsDance = document.querySelectorAll("classPhoneAnimation");
+
+// contactDetailsDanceObserver = new IntersectionObserverRatio((contactItems));
+
 
 /* 
-const sectionOneOptions = {
-  rootMargin: "-200px 0px 0px 0px"
+Const Options = {};
+
+
+Const Observer = New Intersectionobserver(function(entries, Observer) {
+  Entries.Foreach(entry => {
+    Console.Log(entry);
+  })
+
+}, Options);
+
+  
+
+Let Callback = (Entries, Observer) => {
+  Entries.Foreach(entry => {
+    // Each Entry Describes an Intersection Change for One Observed
+    // Target Element:
+    //   Entry.Boundingclientrect
+    //   Entry.Intersectionratio
+    //   Entry.Intersectionrect
+         If(entry.Isintersecting) {
+           Console.Log("entry.Isintersecting");
+         }
+
+    //   Entry.Rootbounds
+    //   Entry.Target
+    //   Entry.Time
+  });
 };
 
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      header.classList.add("nav-scrolled");
-    } else {
-      header.classList.remove("nav-scrolled");
-    }
-  });
-},
-sectionOneOptions);
+ 
 
-sectionOneObserver.observe(sectionOneObserver); */
+Let Target = Document.Queryselector('#hero_header_section');
+Observer.Observe(sectionone);
+
+ */

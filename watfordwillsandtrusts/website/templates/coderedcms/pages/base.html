@@ -1,0 +1,48 @@
+{% extends "coderedcms/pages/base.html" %}
+
+{% load static %}
+
+{% block frontend_assets %}
+{# Leave this section blank since we are pulling in Bootstrap/theme assets through Sass in custom.css #}
+{% endblock %}
+
+{% block coderedcms_assets %}
+{# Leave this section blank since we are pulling in coderedcms assets through Sass in custom.css #}
+{% endblock %}
+
+{% block custom_assets %}
+{# Add your custom CSS here #}
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/custom.css' %}?{% now 'U' %}" />
+{% endblock %}
+
+{% block frontend_scripts %}
+{# Load Bootstrap scripts distributed by coderedcms #}
+<script src="{% static 'coderedcms/vendor/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+{% endblock %}
+
+{% block custom_scripts %}
+{# Add your custom JavaScript here, or delete the line below if you don't need any #}
+<script type="text/javascript" src="{% static 'website/js/custom.js' %}"></script>
+{% comment %}
+<script type="text/javascript" src="//kit.fontawesome.com/2ab35e3a85.js"></script>
+{% endcomment %}
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<!-- MailChimp -->
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e8359e5cea396671275646ef8/21969c6e1fbb789b88e7a51fc.js");</script>
+
+<!-- Face Book Events feed  https://developers.facebook.com/docs/plugins/page-plugin -->
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="a54fPW5k"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+
+<!-- Cookie Consent by https://www.CookieConsent.com -->
+<script type="text/javascript" src="//www.cookieconsent.com/releases/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+
+{% endblock %}
+

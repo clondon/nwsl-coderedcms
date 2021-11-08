@@ -1,0 +1,299 @@
+/* WATFORD WILLS AND TRUSTS */
+/* 17th October 2021  - Added styingling for MailChimp Form */
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+
+body {
+  max-width: 1920px;
+  min-width: 640px;
+  margin: auto;
+  /* Baaner image matching banner */
+  background: -moz-radial-gradient(circle, #fbfbfb 0%, #3a4b2d 92%);
+  background: -webkit-radial-gradient(circle, #fbfbfb 0%, #3a4b2d 92%);
+  background: radial-gradient(circle, #fbfbfb 0%, #3a4b2d 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbfbfb",endColorstr="#3a4b2d",GradientType=1);
+}
+
+a {
+  color: #143f6d;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+
+p { font-size: $font-size-lg}
+.hg-text {
+  background-color: hsl(0deg, 100% ,50% / 5%);
+  padding: 5px;
+}
+
+.img-control-50 img {
+  height: 50%;
+  width: auto;
+
+}
+
+// Image control -= Add to Parent on image to be reduced in Size
+
+img-control-50 img {
+  height: 50%;
+  width: auto;
+}
+
+.img_control img {
+  max-width: 3rem;
+}
+
+.img_control_25 img {
+  max-width: 25%;
+}
+
+.img_control_50 img {
+  max-width: 50%;
+}
+
+.img_control_2rem img {
+  max-width: 2rem;
+}
+
+.img_control_3rem img {
+  max-width: 3rem;
+}
+
+.img_control_5rem img {
+  max-width: 5rem;
+}
+
+.img_control_12rem img {
+  max-width: 12rem;
+}
+
+
+.img_control_75 img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+
+
+.hero-background-gradient {
+  position: relative;
+  z-index: -1;
+  background: rgb(198,217,135);
+  background: -moz-linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  background: -webkit-linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  background: linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6d987",endColorstr="#fbfbfb",GradientType=1);
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+
+.bg_shading_light {
+  display: inline-block;
+    background-color: #f0f8ff42;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+.bg_image_position_top  > hero-bg {
+	background-position-y: top;
+}
+
+
+
+
+a {
+  color: #143f6d;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.hg-text {
+  background-color: #330000;
+  padding: 5px;
+}
+
+
+
+.hero-background-gradient {
+  position: relative;
+  z-index: -1;
+  background: #c6d987;
+  background: -moz-linear-gradient(0deg, #c6d987 58%, #fbfbfb 76%);
+  background: -webkit-linear-gradient(0deg, #c6d987 58%, #fbfbfb 76%);
+  background: linear-gradient(0deg, #c6d987 58%, #fbfbfb 76%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6d987",endColorstr="#fbfbfb",GradientType=1);
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+body {
+  max-width: 1920px;
+  min-width: 640px;
+  margin: auto;
+  /* Banner image matching banner */
+  background: -moz-radial-gradient(circle, #fbfbfb 0%, #3a4b2d 92%);
+  background: -webkit-radial-gradient(circle, #fbfbfb 0%, #3a4b2d 92%);
+  background: radial-gradient(circle, #fbfbfb 0%, #3a4b2d 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbfbfb",endColorstr="#3a4b2d",GradientType=1);
+}
+
+a {
+  color: #143f6d;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+
+p { font-size: $font-size-lg}
+.hg-text {
+  background-color: hsl(0deg, 100% ,50% / 5%);
+  padding: 5px;
+}
+
+.img-control-50 img {
+  height: 50%;
+  width: auto;
+
+}
+
+// Image control -= Add to Parent on image to be reduced in Size
+
+img-control-50 img {
+  height: 50%;
+  width: auto;
+}
+
+.img_control img {
+  max-width: 3rem;
+}
+
+.img_control_25 img {
+  max-width: 25%;
+}
+
+.img_control_50 img {
+  max-width: 50%;
+}
+
+.img_control_2rem img {
+  max-width: 2rem;
+}
+
+.img_control_3rem img {
+  max-width: 3rem;
+}
+
+.img_control_5rem img {
+  max-width: 5rem;
+}
+
+.img_control_12rem img {
+  max-width: 12rem;
+}
+
+
+.img_control_75 img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+
+
+.hero-background-gradient {
+  position: relative;
+  z-index: -1;
+  background: rgb(198,217,135);
+  background: -moz-linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  background: -webkit-linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  background: linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6d987",endColorstr="#fbfbfb",GradientType=1);
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+
+.bg_shading_light {
+  display: inline-block;
+    background-color: #f0f8ff42;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+.bg_image_position_top  > hero-bg {
+	background-position-y: top;
+}
+
+
+
+
+a {
+  color: #143f6d;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.hg-text {
+  background-color: #330000;
+  padding: 5px;
+}
+
+.hero-background-gradient {
+  position: relative;
+  z-index: -1;
+  background: #c6d987;
+  background: -moz-linear-gradient(0deg, #c6d987 58%, #fbfbfb 76%);
+  background: -webkit-linear-gradient(0deg, #c6d987 58%, #fbfbfb 76%);
+  background: linear-gradient(0deg, #c6d987 58%, #fbfbfb 76%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6d987",endColorstr="#fbfbfb",GradientType=1);
+}
+
+.navbar-default {
+  background: transparent;
+}
+
+
+
+#mc_embed_signup input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px black;
+  font-size: 1.4rem;
+  background-color: whitesmoke;
+
+}
+#mc_embed_signup label {
+  font-weight: 900;
+  text-shadow: 2px 2px #3e7878;
+  font-size: 1.2rem;
+
+}
+#mc_embed_signup input:focus {
+  border-color: #8BC34A;
+  background-color: #f3f1f1;
+  transition: background-color 0.5s ease;
+}
+

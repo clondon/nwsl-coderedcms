@@ -1,0 +1,128 @@
+/* h2 animation add id=underlineElement to activate */
+
+/* Andy Animation for hero section */
+
+/* h2 animation add id=underlineElement to activate */
+// Import Andy scss
+@import "andy-master/andy";
+/* Andy Animation for hero section */
+
+a {
+  color: #143f6d;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h2 {
+    border-bottom: 2px solid lightgrey;
+    display: inline-block;
+    animation: slideinleft; /* referring  */
+    animation: animation-delay 2s;
+  }
+.myBorder {
+  border-bottom: 2px solid red;
+  box-shadow: -1px 1px -1px 1px purple;
+  display: inline-block;
+  animation: slideinleft; /* referring  */
+  animation: animation-delay 3s;
+  }
+
+.h2-heading-title-block_styling {
+  background-color: rgba(230, 230, 230, 0.5);
+  border-radius: 25px;
+  display: inline-block;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 1px 1px black;
+  padding: 1rem;
+}  
+
+
+
+
+h2 {
+    border-bottom: 2px solid lightgrey;
+    display: inline-block;
+    animation: slideinleft; /* referring  */
+    animation: animation-delay 2s;
+  }
+.myBorder {
+  border-bottom: 2px solid red;
+  box-shadow: -1px 1px -1px 1px purple;
+  display: inline-block;
+  animation: slideinleft; /* referring  */
+  animation: animation-delay 3s;
+  }
+
+.h2-heading-title-block_styling {
+  background-color: rgba(230, 230, 230, 0.5);
+  border-radius: 25px;
+  display: inline-block;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 1px 1px black;
+  padding: 1rem;
+}  
+// Add to Parent on image to be reduced in Size
+
+.img_control img {
+  max-width: 150px;
+}
+.img_control_25 img {
+  max-width: 25%;
+}
+
+.img_control_50 img {
+  max-width: 50%;
+}
+// class="img_control"
+
+
+
+.bg_img_with_opacity {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center; 
+  overflow: hidden;
+
+}
+
+.bg_img_with_opacity::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  background: url("https://thehornswatford.co.uk/media/images/new_horn_gray_text2.original.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  transform: rotate(6deg);
+  
+}
+
+.main_footer a  {
+      color: #edf2f7;
+      text-decoration: none;
+      background-color: transparent; 
+  }
+
+.text-light a {
+    color: #f8f9fa !important;
+}
+
+.bg_party_image {
+  background: url("https://thehornswatford.co.uk/media/images/party-people.original.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Background effect */
+.background_effect_one {
+  $color1: #001122;
+  $color1: #ffeeee;
+ @include background-gradient($color1, black, 'diagonal');
+}
+

@@ -35,6 +35,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 WAGTAIL_CACHE = False
 
+if(DEBUG):
+  COLLECTFAST_DEBUG = True
+
+
+
 try:
     from .local_settings import *
 except ImportError:

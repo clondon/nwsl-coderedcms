@@ -1,0 +1,92 @@
+/* Updated 25th October 2021 */
+.hide_main_nav_bar {
+  margin-top: -80px;
+}
+.shrink {
+  padding: 20px 0;
+}
+
+/*  30th October 2021 - CL */
+.header_size_control {
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  height: 500px;
+  background-color: peru;
+  font-size: 1rem;
+}
+/*  2nd November 2021 */
+
+.hero_header_large {
+  height: 500px;
+  color: blue;
+  transition: width 2s, height 4s;
+  background-color: peru;
+}
+
+.bg_hero {
+  border: 10px dotted green;
+}
+.hero_header_small {
+  height: 200px;
+  p,
+  h1,
+  h2,
+  h3 {
+    display: none;
+  }
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#hero_header_section {
+  /*  border: 2px dotted green; */
+}

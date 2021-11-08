@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "website/static/website"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

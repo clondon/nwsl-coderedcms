@@ -1,0 +1,24 @@
+* {font-size: 200px;}
+p {color: lightblue;}
+/*  Animation stuff */
+
+.bounce_element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* Font for title */
+
+.title_style {
+  font-family: 'Merienda One', cursive; 
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 2px #FDFDFF;
+}
+
+/* Thick red border */
+hr.new4 {
+  border: 1px solid red;
+}

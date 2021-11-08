@@ -1,0 +1,7 @@
+{% load menu_tags %}
+
+{# A 'sub_menu_templates' value without commas is recognised as a single template #}
+{% main_menu max_levels=3 template="custom_menus/main_menu.html" sub_menu_templates="custom_menus/main_menu_sub.html" %}
+
+{# You can also use the 'sub_menu_template' (no plural) option, which is slightly more verbose #}
+{% main_menu max_levels=3 template="custom_menus/main_menu.html" sub_menu_template="custom_menus/main_menu_sub.html" %}

@@ -1,0 +1,131 @@
+/* WATFORD WILLS AND TRUSTS */
+/* 17th October 2021  - Added styling for MailChimp Form */
+/* 20th October 2021  - Changed body color gradient */
+
+html {
+  scroll-behavior: smooth;
+  max-width: 1920px;
+  min-width: 640px;
+  margin: auto;
+}
+
+body {
+  /* max-width: 1920px; */
+  /* min-width: 640px; */
+  margin: auto;
+  background: -moz-radial-gradient(circle, #e0e4e5 0%, #67799d 92%);
+  background: -webkit-radial-gradient(circle, #e0e4e5 0%, #67799d 92%);
+  background: radial-gradient(circle, #e0e4e5 0%, #67799d 92%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0e4e5",endColorstr="#67799d",GradientType=1);
+  color: #212020;
+}
+
+
+
+p {
+  font-size: $font-size-lg;
+}
+
+/* .hg-text {
+  background-color: hsl(0deg, 100%, 50% / 5%);
+  padding: 5px;
+}
+ */
+.img-control-50 img {
+  height: 50%;
+  width: auto;
+}
+
+// Image control -= Add to Parent on image to be reduced in Size
+
+img-control-50 img {
+  height: 50%;
+  width: auto;
+}
+
+.img_control img {
+  max-width: 3rem;
+}
+
+.img_control_25 img {
+  max-width: 25%;
+}
+
+.img_control_50 img {
+  max-width: 50%;
+}
+
+.img_control_2rem img {
+  max-width: 2rem;
+}
+
+.img_control_3rem img {
+  max-width: 3rem;
+}
+
+.img_control_5rem img {
+  max-width: 5rem;
+}
+
+.img_control_12rem img {
+  max-width: 12rem;
+}
+
+.img_control_75 img {
+  max-width: 75%;
+  max-height: 75%;
+}
+
+/* .max-width-60-ch {
+  max-width: 60ch;
+} */
+
+.hero_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  min-height: 680px;
+}
+
+
+/* MailChimp Contact form */
+
+#mc_embed_signup input:focus {
+  border-color: #8BC34A;
+  /* background-color: #f3f1f1; */
+  background-color: rgb(249, 249, 247);
+  transition: background-color 0.5s ease;
+} 
+
+input:focus {
+  border-color: #8bc34a;
+  background-color: #f3f1f1;
+  transition: background-color 0.5s ease;
+}
+
+#mc_embed_signup input {
+  padding: 1rem;
+  width: 50ch;
+  margin: 8px 0;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px black;
+  font-size: 1.1rem;
+  background-color: whitesmoke;
+}
+#mc_embed_signup label {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: black;
+}
+
+
+#mc_embed_signup:focus {
+  background-color: azure;
+}
+
+.bg_peace_dove {
+	background: url(https://www.watfordwillsandtrusts.co.uk/media/images/dove-transparent.max-1000x1000.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+

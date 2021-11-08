@@ -13,6 +13,7 @@
 //  Add background-attachment: fix to party people image */
 // Add background-position: top to hero-image 
 //  Added width-clamp to body 
+/// Changed image controls
 html {
   scroll-behavior: smooth;
   background-color: black;
@@ -60,11 +61,7 @@ h2 {
 
 //  Added width-clamp to body 
 
-.bg-image-position-top {
-  img {
-	  background-position: top;	
-      }
-}
+
 h2 {
   border-bottom: 2px solid lightgrey;
   display: inline-block;

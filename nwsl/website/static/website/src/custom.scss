@@ -1,3 +1,5 @@
+// Edit this file for css styles
+
 ///
 /// CodeRed CMS Sass starter template
 ///
@@ -60,7 +62,5 @@
 @import "coderedcms/scss/codered-bs-overrides";
 
 // Your custom styles here.
-/* Updated 16th October 2021 */
-.hide_main_nav_bar {
-  margin-top: -80px;
-}
+@import "partial/mybase";   //  html settings  8th November 2021
+@import "partial/00";

@@ -1,0 +1,185 @@
+/* h2 animation add id=underlineElement to activate */
+
+/* Andy Animation for hero section */
+
+/* h2 animation add id=underlineElement to activate */
+// Import Andy scss
+@import "andy-master/andy";
+/* Andy Animation for hero section */
+
+html {
+  scroll-behavior: smooth;
+  background-color: black
+  
+}
+
+body {
+  // Web Site max width
+  max-width: 1920px;
+  min-width: 640px;
+  margin: auto;
+}
+
+
+a {
+  color: #143f6d;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h2 {
+    border-bottom: 2px solid lightgrey;
+    display: inline-block;
+    animation: slideinleft; /* referring  */
+    animation: animation-delay 2s;
+  }
+.myBorder {
+  border-bottom: 2px solid red;
+  box-shadow: -1px 1px -1px 1px purple;
+  display: inline-block;
+  animation: slideinleft; /* referring  */
+  animation: animation-delay 3s;
+  }
+
+.h2-heading-title-block_styling {
+  background-color: rgba(230, 230, 230, 0.5);
+  border-radius: 25px;
+  display: inline-block;
+  text-shadow: 2px 2px 2px black;
+  box-shadow: 1px 1px black;
+  padding: 1rem;
+}  
+
+
+
+
+h2 {
+  border-bottom: 2px solid lightgrey;
+  display: inline-block;
+  animation: slideinleft; /* referring  */
+  animation: animation-delay 2s;
+  }
+.myBorder {
+  border-bottom: 2px solid red;
+  box-shadow: -1px 1px -1px 1px purple;
+  display: inline-block;
+  animation: slideinleft; /* referring  */
+  animation: animation-delay 3s;
+  }
+
+.h2-heading-title-block_styling {
+  background-color: rgba(230, 230, 230, 0.2);
+  border-radius: 25px;
+  display: inline-block;
+  text-shadow: 2px 2px 2px rgb(98, 97, 97);
+  box-shadow: 1px 1px rgb(98, 97, 97);
+  padding: 1rem;
+}  
+// Image control -= Add to Parent on image to be reduced in Size
+
+.img_control img {
+  max-width: 3rem;
+}
+.img_control_25 img {
+  max-width: 25%;
+}
+
+.img_control_50 img {
+  max-width: 50%;
+}
+
+.img_control_75 img {
+  max-width: 75%;
+  max-height: 75%;
+}
+.img_control_12rem img {
+  max-width: 12rem;
+
+}
+
+
+.image_control_12rem:hover img  {
+  box-shadow: -1px 1px 5px 2px;
+  border-radius: 15px;
+  padding: 1rem;
+  color: #e3e0e0;
+}
+
+// class="img_control"
+
+
+
+.bg_img_with_opacity {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center; 
+  overflow: hidden;
+
+}
+
+.bg_img_with_opacity::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  background: url("https://thehornswatford.co.uk/media/images/new_horn_gray_text2.original.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  transform: rotate(6deg);
+  
+}
+
+.main_footer a  {
+      color: #edf2f7;
+      text-decoration: none;
+      background-color: transparent; 
+  }
+
+.text-light a {
+    color: #f8f9fa !important;
+}
+
+.bg_party_image {
+  background: url("https://thehornswatford.co.uk/media/images/party-people.original.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Background effects */
+.background_effect_one {
+  $color1: #001122;
+  $color1: #ffeeee;
+ @include background-gradient($color1, black, 'diagonal');
+}
+.background_effect_two {
+  $darker_color1: #e0e3e6;
+  $lighter_color: #f8f9fa;
+ @include background-gradient($darker_color1, $lighter_color, 'diagonal');
+}
+
+
+
+.back_gradient_00 {
+  background: rgb(60,60,61);
+  background: -moz-linear-gradient(0deg, rgba(60,60,61,1) 18%, rgba(14,12,17,1) 99%);
+  background: -webkit-linear-gradient(0deg, rgba(60,60,61,1) 18%, rgba(14,12,17,1) 99%);
+  background: linear-gradient(0deg, rgba(60,60,61,1) 18%, rgba(14,12,17,1) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c3c3d",endColorstr="#0e0c11",GradientType=1);
+}
+
+// Grow on hover
+.grow { 
+  transition: all .2s ease-in-out; 
+  }
+  
+.grow:hover { 
+  transform: scale(1.1); 
+  box-shadow: 2px 2px 5px;
+  color: gold;
+  }

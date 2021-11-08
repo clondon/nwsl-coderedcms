@@ -1,0 +1,72 @@
+/* 30th September */
+html {
+  scroll-behavior: smooth;
+  background-color: black
+  
+}
+
+body {
+  //Web Site min and max width
+  max-width: 1920px;
+  min-width: 640px;
+  // width: clamp(760px, 50% , 1920px);
+  margin: auto;
+}
+
+
+a {
+  color: #143f6d;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+
+p { font-size: $font-size-lg}
+.hg-text {
+  background-color: hsl(0deg, 100% ,50% / 5%);
+  padding: 5px;
+}
+
+.img-control-50 img {
+  height: 50%;
+  width: auto;
+
+}
+
+// Image control -= Add to Parent on image to be reduced in Size
+
+.img_control img {
+  max-width: 3rem;
+}
+.img_control_25 img {
+  max-width: 25%;
+}
+
+.img_control_50 img {
+  max-width: 50%;
+}
+
+.img_control_75 img {
+  max-width: 75%;
+  max-height: 75%;
+}
+.img_control_12rem img {
+  max-width: 12rem;
+
+}
+
+
+.hero-background-gradient {
+  position: relative;
+  z-index: -1;
+  background: rgb(198,217,135);
+  background: -moz-linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  background: -webkit-linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  background: linear-gradient(0deg, rgba(198,217,135,1) 58%, rgba(251,251,251,1) 76%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c6d987",endColorstr="#fbfbfb",GradientType=1);
+}
+
+.navbar-default {
+  background: transparent;
+}
