@@ -1,12 +1,12 @@
 const headerSection = document.getElementById('hero_header_section');
 // headerSection.classList.add('.hero_header_large');
 
-options = {
+optionsHead = {
   root: null, //  The view point
   threshold: 1,
   rootMargin: "10px"
 };
-console.log(options );
+// console.log(options );
 const headershrink = new IntersectionObserver(function(entries, headershrink)
 {
   entries.forEach(entry => {
@@ -19,12 +19,31 @@ const headershrink = new IntersectionObserver(function(entries, headershrink)
     }
     
   });
-}, options)
+}, optionsHead)
 
 headershrink.observe(headerSection);
 
 // Slide in phone number using animate.css library    animate__backInLeft
 
+optionsContactItems = {
+  root: null, //  The view point
+  threshold: 1,
+  rootMargin: "10px"
+};
+
+const ContactItemsDance = new IntersectionObserver(function(entries, contactDetailsDance)
+{
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      headerSection.classList.remove('hero_header_small');
+      headerSection.classList.add('hero_header_large');
+    } else {
+      headerSection.classList.remove('hero_header_large');
+      headerSection.classList.add('hero_header_small');
+    }
+    
+  });
+}, optionsHead)
 
 const contactDetailsDance = document.querySelectorAll("classPhoneAnimation");
 
